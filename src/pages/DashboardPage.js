@@ -4,7 +4,6 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
@@ -69,7 +68,7 @@ const DashboardPage = () => {
 
             onCloseDrawer();
         },
-        [edit]
+        [edit, dispatch, shoppingId, shoppings]
     );
 
     const handleChange = (event, i) => {
